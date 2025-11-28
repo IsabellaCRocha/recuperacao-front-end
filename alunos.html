@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">TABELA DE ALUNOS</h1>
+    </header>
+
+    <section class="tabela">
+        <h1 class="tabela-titulo">Alunos</h1>
+    </section>
+   
+    <table class="tabela2" id="tabela_alunos">
+        <tr>
+            <th>Nome</th>
+            <th>1° Trimestre</th>
+            <th>2° Trimestre</th>
+            <th>3° Trimestre</th>
+            <th>Média final</th>
+            <th>Frequência</th>
+            <th>Situação</th>
+        </tr>
+        <tr class="aluno">
+            <td class="tab_nome_aluno">Isabella</td>
+            <td class="nota_aluno">10.0</td>
+            <td class="nota_aluno">8.9</td>
+            <td class="nota_aluno">9.8</td>
+            <td class="media">9.5</td>
+            <td>100%</td>
+            <td class="situacao">Aprovado</td>
+        </tr>
+        <tr class="aluno">
+            <td class="tab_nome_aluno">Fernanda</td>
+            <td class="nota_aluno">7.0</td>
+            <td class="nota_aluno">8.6</td>
+            <td class="nota_aluno">10.0</td>
+            <td class="media">8.5</td>
+            <td>86%</td>
+            <td class="situacao">Aprovado</td>
+        </tr>
+    </table>
+
+    <section class="informações">
+        <h1 class="tabela-titulo">Adicionar Aluno</h1>
+    </section>
+    <form action="" method="">
+        <fieldset class="nome">
+            <legend>Nome:</legend>
+            <input type="text" id="campo_nome">
+        </fieldset>
+
+        <fieldset class="formulario_notas">
+            <legend>Notas:</legend>
+            <div class="campo_notas">
+            <label for="nota_aluno_1">1° Trimestre:</label>
+            <input type="number" name="nota_aluno_1" id="nota_aluno_1" min="0.0" max="10.0" step="0.1" value="0.0"> 
+            </div>
+            <div class="campo_notas">
+                <label for="nota_aluno_1">2° Trimestre:</label>
+                <input type="number" name="nota_aluno_1" id="nota_aluno_2" min="0.0" max="10.0" step="0.1" value="0.0"> 
+            </div>
+            <div class="campo_notas">
+                <label for="nota_aluno_1">3° Trimestre:</label>
+                <input type="number" name="nota_aluno_1" id="nota_aluno_3" min="0.0" max="10.0" step="0.1" value="0.0"> 
+            </div>
+        </fieldset>
+
+        <fieldset class="frequencia">
+            <legend>Frequência:</legend>
+            <input type="number" name="frequencia_aluno_1" id="frequencia_aluno_1" min="0.0" max="100.0" step="0.1" value="0.0"> 
+            <legend>%</legend>
+        </fieldset>
+    
+        <input class="adicionar" type="submit" value="Adicionar" id="adicionar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
